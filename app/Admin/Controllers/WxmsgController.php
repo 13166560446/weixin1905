@@ -9,6 +9,7 @@ use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Redis;
 
 
 class WxmsgController extends AdminController
@@ -18,12 +19,34 @@ class WxmsgController extends AdminController
      *
      * @var string
      */
+    protected $access_token;
+    public function __construct(){
+        //获取access_token
+        $this->access_token=$this->getAccessToken();
+    }
+    public function getAccessToken(){
+        $key=   'wx_access_token';
+
+        $access_token=Redis::get($key);
+        if($access_token){
+            return $access_token;
+        }
+        $url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='.env('WX_APPID').'&secret='.env('WX_APPSECRET');
+        $data_json = file_get_contents($url);
+        $arr = json_decode($data_json,true);
+        Redis::set($key,$arr['access_token']);
+        Redis::expire($key,3600);
+        return $arr['access_token'];
+    }
+
+
     protected $title = '群发';
+
     public function sendmsg(){
         $openid_arr=WxUsermodel::select('openid')->get()->toArray();
         $openid=array_column($openid_arr,'openid');
 //        print_r($openid);
-        $url='https://api.weixin.qq.com/cgi-bin/message/mass/send?access_token=28_qO-eB_2RpFNc4c1G4tDrzd0UxEMRCZiM7CeuES2FAKX2Q7HRt1-0u0SoU5NnS5ATqJbWPRW0FruMA2Q2QtcbBlSou7H-s0GIIV_yA2tOB7P3XfaHOBIUXpA4pNouZiJ09iQ1jWq3n_hWjowECNGiAGAPAT';
+        $url='https://api.weixin.qq.com/cgi-bin/message/mass/send?access_token='.$this->access_token;
         $msg=date('Y-m-d H:i:s').'哈哈哈哈哈';
         $data=[
             'touser'=>$openid,
@@ -36,6 +59,7 @@ class WxmsgController extends AdminController
         ]);
         echo $response->getBody();
     }
+
 
 
 }
