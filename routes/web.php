@@ -33,4 +33,4 @@ Route::get('/weixin/menu','Weixin\WeixinController@createmenu');
 
 Route::get('/vote','VoteController@index');//微信投票
 //微商城
-Route::get('/goods/detail','Goods\IndexController@detail');//微信投票
+Route::get('/goods/detail','Goods\IndexController@detail');
