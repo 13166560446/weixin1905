@@ -18,7 +18,7 @@ class WxmsgController extends AdminController
      *
      * @var string
      */
-    protected $title = '';
+    protected $title = '群发';
     public function sendmsg(){
         $openid_arr=WxUsermodel::select('openid')->get()->toArray();
         $openid=array_column($openid_arr,'openid');
