@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Index;
 use App\Model\WxUsermodel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 class IndexController extends Controller
 {
     public function index(){
@@ -20,8 +20,21 @@ class IndexController extends Controller
             //入库
             WxUsermodel::insertGetId($user_info);
         }
+        //微信配置
+        $nonceStr = Str::random(8);
+        $wx_config=[
+            'appId'=>env('WX_APPID'),
+            'timestamp'=>time(),
+            'nonceStr'=>$nonceStr,
+        ];
+        $ticket=WxUsermodel::getJsapiTicket();
+        $url=$_SERVER['APP_URL'].$_SERVER['REQUEST_URI'];
+        $jsapi_signature = WxUserModel::jsapiSign($ticket,$url,$wx_config);
+        $wx_config['signature'] = $jsapi_signature;
+        
         $data=[
-            'u'=>$user_info
+            'u'=>$user_info,
+            'wx_config' => $wx_config
         ];
         return view('index.index',$data);
     }
