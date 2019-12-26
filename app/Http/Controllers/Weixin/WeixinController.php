@@ -61,10 +61,6 @@ class WeixinController extends Controller
                 $xml_obj=simplexml_load_string($xml_str);
                 $event=$xml_obj->Event; //类型
                 $openid=$xml_obj->FromUserName;    //获取用户的openid
-                //获取用户信息
-                $url='https://api.weixin.qq.com/cgi-bin/user/info?access_token='.$this->access_token.'&openid='.$openid.'&lang=zh_CN';
-                $user_info=file_get_contents($url);
-                $u=json_decode($user_info,true);
                 if($event=='subscribe'){
 
                     //判断用户是否已经存在
@@ -82,7 +78,9 @@ class WeixinController extends Controller
                     }else{
 
                         //获取用户信息
-
+                        $url='https://api.weixin.qq.com/cgi-bin/user/info?access_token='.$this->access_token.'&openid='.$openid.'&lang=zh_CN';
+                        $user_info=file_get_contents($url);
+                        $u=json_decode($user_info,true);
                         $user_data=[
                             'openid'    => $openid,
                             'nickname'  =>$u['nickname'],
@@ -128,9 +126,25 @@ class WeixinController extends Controller
 //                        echo $xmll;
 //                    }
                     if($xml_obj->EventKey=='qian'){
-
+                        $msg='签到成功';
+                        $xmll='<xml>
+                              <ToUserName><![CDATA['.$openid.']]></ToUserName>
+                             <FromUserName><![CDATA['.$xml_obj->ToUserName.']]></FromUserName>
+                              <CreateTime>'.time().'</CreateTime>
+                              <MsgType><![CDATA[text]]></MsgType>
+                              <Content><![CDATA['.$msg.']]></Content>
+                            </xml>';
+                        echo $xmll;
                     }elseif($xml_obj->EventKey=='jifen'){
-
+                        $msg='您的积分为0';
+                        $xmll='<xml>
+                              <ToUserName><![CDATA['.$openid.']]></ToUserName>
+                             <FromUserName><![CDATA['.$xml_obj->ToUserName.']]></FromUserName>
+                              <CreateTime>'.time().'</CreateTime>
+                              <MsgType><![CDATA[text]]></MsgType>
+                              <Content><![CDATA['.$msg.']]></Content>
+                            </xml>';
+                        echo $xmll;
                     }
                 }
                 //判断消息类型
