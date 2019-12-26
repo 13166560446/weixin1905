@@ -126,8 +126,9 @@ class WeixinController extends Controller
 //                        echo $xmll;
 //                    }
                     if($xml_obj->EventKey=='qian'){
-                        $jifen=10;
-                        $data=WxUsermodel::where('openid',$openid)->update(['jifen'=>'jifen'+$jifen]);
+                        $u=WxUsermodel::where(['openid'=>$openid])->first();
+                        $jifen=10+$u['jifen'];
+                        $data=WxUsermodel::where('openid',$openid)->update(['jifen'=>$jifen]);
                         $msg='签到成功';
                         $xmll='<xml>
                               <ToUserName><![CDATA['.$openid.']]></ToUserName>
