@@ -94,7 +94,7 @@ class WeixinController extends Controller
                         //openid 入库
                         $uid= WxUsermodel::insertGetId($user_data);
                         //回复用户关注
-                        $msg="谢谢关注";
+                        $msg="欢迎".$u['nickname']."同学,感谢您的关注";
                         $xml='<xml>
                               <ToUserName><![CDATA['.$openid.']]></ToUserName>
                               <FromUserName><![CDATA['.$xml_obj->ToUserName.']]></FromUserName>
@@ -272,22 +272,36 @@ class WeixinController extends Controller
         $redirect_uri2=urlencode($url2);
         //创建自定义菜单的接口地址
         $url='https://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$this->access_token;
+//        $menu=[
+//            'button'=>[
+//                [
+//                    'type'=> 'click',
+//                    'name'=>'获取天气',
+//                    'key'=>'weather'
+//                ],
+//                [
+//                    'type'=> 'view',
+//                    'name'=>'投票',
+//                    'url'=>'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe17b56b8edc08611&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+//                ],
+//                [
+//                    'type'=> 'view',
+//                    'name'=>'商城',
+//                    'url'=>'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe17b56b8edc08611&redirect_uri='.$redirect_uri2.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+//                ]
+//            ]
+//        ];
         $menu=[
             'button'=>[
                 [
-                    'type'=> 'click',
-                    'name'=>'获取天气',
-                    'key'=>'weather'
+                    'type'=>'click',
+                    'name'=>'积分查询',
+                    'key'=>'jifen'
                 ],
                 [
-                    'type'=> 'view',
-                    'name'=>'投票',
-                    'url'=>'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe17b56b8edc08611&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
-                ],
-                [
-                    'type'=> 'view',
-                    'name'=>'商城',
-                    'url'=>'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe17b56b8edc08611&redirect_uri='.$redirect_uri2.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+                    'type'=>'click',
+                    'name'=>'签到',
+                    'key'=>'qian'
                 ]
             ]
         ];
@@ -296,4 +310,9 @@ class WeixinController extends Controller
         $response=$client->request('post',$url,['body'=>$menu_json]);
         echo $response->getBody();
     }
+
+
+
+    //
+
 }
