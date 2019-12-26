@@ -126,6 +126,8 @@ class WeixinController extends Controller
 //                        echo $xmll;
 //                    }
                     if($xml_obj->EventKey=='qian'){
+                        $jifen=10;
+                        $data=WxUsermodel::where('openid',$openid)->updated(['jifen'=>$jifen]);
                         $msg='签到成功';
                         $xmll='<xml>
                               <ToUserName><![CDATA['.$openid.']]></ToUserName>
@@ -136,7 +138,8 @@ class WeixinController extends Controller
                             </xml>';
                         echo $xmll;
                     }elseif($xml_obj->EventKey=='jifen'){
-                        $msg='您的积分为0';
+                        $u=WxUsermodel::where(['openid'=>$openid])->first();
+                        $msg='您的积分为'.$u['jifen'];
                         $xmll='<xml>
                               <ToUserName><![CDATA['.$openid.']]></ToUserName>
                              <FromUserName><![CDATA['.$xml_obj->ToUserName.']]></FromUserName>
