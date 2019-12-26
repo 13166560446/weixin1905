@@ -15,25 +15,49 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WeixinController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeixinController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Weixin/WeixinController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="303" column="33" lean-forward="true" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
+            <state relative-caret-position="275">
+              <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
               <folding>
-                <element signature="e#47#83#0#PHP" expanded="true" />
-                <marker date="1577321258793" expanded="true" signature="2374:2786" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="3902:4314" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="5094:5450" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="5094:5451" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="5094:5506" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="6039:6361" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="7384:7774" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="7659:7751" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="8011:8273" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="8206:8266" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="8507:8851" ph="..." />
-                <marker date="1577321258793" expanded="true" signature="8702:8844" ph="..." />
+                <element signature="e#47#83#0#PHP" expanded="false" />
+                <marker date="1577323899258" expanded="true" signature="2653:3065" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="3922:4334" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="5136:5502" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="5136:5503" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="5136:5560" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="6231:6553" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="7576:7966" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="7851:7943" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="8203:8465" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="8398:8458" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="8699:9043" ph="..." />
+                <marker date="1577323899258" expanded="true" signature="8894:9036" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="999">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="e#39#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JifenController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JifenController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="e#39#76#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,7 +66,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/index/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16578">
+            <state relative-caret-position="27">
               <caret line="614" column="41" lean-forward="false" selection-start-line="614" selection-start-column="41" selection-end-line="614" selection-end-column="41" />
               <folding>
                 <marker date="1577104075963" expanded="true" signature="1410:1426" ph="..." />
@@ -55,36 +79,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WxUserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/WxUserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="189">
               <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="39" />
               <folding>
                 <element signature="e#45#71#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WxUsermodel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Model/WxUsermodel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-              <folding>
-                <element signature="e#29#68#0#PHP" expanded="true" />
-                <marker date="1577148074822" expanded="true" signature="1683:1685" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -100,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="783">
               <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
@@ -159,6 +160,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/index/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Model/WxUsermodel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/JifenController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Weixin/WeixinController.php" />
       </list>
     </option>
@@ -426,58 +428,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Weixin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin1905" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin1905" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Index" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin1905" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixin1905" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -645,19 +595,19 @@
       <workItem from="1577147730131" duration="898000" />
       <workItem from="1577151821973" duration="7721000" />
       <workItem from="1577238235118" duration="4246000" />
-      <workItem from="1577317480056" duration="3037000" />
+      <workItem from="1577317480056" duration="5366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177489000" />
+    <option name="totallyTimeSpent" value="179818000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1364" height="735" extended-state="1" />
+    <frame x="-7" y="0" width="1364" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14465876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20919882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -696,13 +646,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/ModelUserModel.php" />
     <entry file="file://$PROJECT_DIR$/.env.example">
       <provider selected="true" editor-type-id="text-editor">
@@ -942,14 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="45" column="44" lean-forward="false" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -974,30 +909,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="39" />
+        <state relative-caret-position="783">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
-            <element signature="e#45#71#0#PHP" expanded="true" />
+            <element signature="e#39#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/WxUsermodel.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JifenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="235">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="e#29#68#0#PHP" expanded="true" />
-            <marker date="1577148074822" expanded="true" signature="1683:1685" ph="{...}" />
+            <element signature="e#39#76#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/WxUserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
+        <state relative-caret-position="154">
           <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding />
         </state>
@@ -1005,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16578">
+        <state relative-caret-position="27">
           <caret line="614" column="41" lean-forward="false" selection-start-line="614" selection-start-column="41" selection-end-line="614" selection-end-column="41" />
           <folding>
             <marker date="1577104075963" expanded="true" signature="1410:1426" ph="..." />
@@ -1017,33 +959,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Weixin/WeixinController.php">
+    <entry file="file://$PROJECT_DIR$/app/Model/WxUsermodel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="303" column="33" lean-forward="true" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
+        <state relative-caret-position="54">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="17" />
           <folding>
-            <element signature="e#47#83#0#PHP" expanded="true" />
-            <marker date="1577321258793" expanded="true" signature="2374:2786" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="3902:4314" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="5094:5450" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="5094:5451" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="5094:5506" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="6039:6361" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="7384:7774" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="7659:7751" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="8011:8273" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="8206:8266" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="8507:8851" ph="..." />
-            <marker date="1577321258793" expanded="true" signature="8702:8844" ph="..." />
+            <element signature="e#29#68#0#PHP" expanded="true" />
+            <marker date="1577148074822" expanded="true" signature="1683:1685" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="189">
+          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#45#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Weixin/WeixinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+          <folding>
+            <element signature="e#47#83#0#PHP" expanded="true" />
+            <marker date="1577323899258" expanded="true" signature="2653:3065" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="3922:4334" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="5136:5502" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="5136:5503" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="5136:5560" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="6231:6553" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="7576:7966" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="7851:7943" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="8203:8465" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="8398:8458" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="8699:9043" ph="..." />
+            <marker date="1577323899258" expanded="true" signature="8894:9036" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
