@@ -36,3 +36,11 @@ Route::get('/vote','VoteController@index');//微信投票
 Route::get('/goods/detail','Goods\IndexController@detail');
 //微信扫码
 Route::get('/weixin/qrcode','Weixin\QrcodeController@qrcode');
+
+
+
+
+
+
+//接口
+Route::get('/test/pay','TestController@alipay');
