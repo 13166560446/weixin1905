@@ -44,6 +44,8 @@ Route::get('/weixin/qrcode','Weixin\QrcodeController@qrcode');
 
 //接口
 Route::get('/test/pay','TestController@alipay');
+Route::get('/test/alipay/return','Alipay\PayController@aliReturn');
+Route::post('/test/alipay/notify','Alipay\PayController@notify');
 
 Route::get('/test/jiekou','Api\TestController@test');
 Route::post('/test/reg','Api\TestController@reg');
