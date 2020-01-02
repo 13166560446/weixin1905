@@ -50,3 +50,4 @@ Route::post('/test/alipay/notify','Alipay\PayController@notify');
 Route::get('/test/jiekou','Api\TestController@test');
 Route::post('/test/reg','Api\TestController@reg');
 Route::post('/test/login','Api\TestController@login');
+Route::get('/test/list','Api\TestController@userlist');
