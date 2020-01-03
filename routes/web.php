@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/','Index\IndexController@Index');  //网站首页
+//Route::get('/','Index\IndexController@Index');  //网站首页
 
 
 
