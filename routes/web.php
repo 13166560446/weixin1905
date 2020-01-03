@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/','Index\IndexController@Index');  //网站首页
 
@@ -50,4 +50,4 @@ Route::post('/test/alipay/notify','Alipay\PayController@notify');
 Route::get('/test/jiekou','Api\TestController@test');
 Route::post('/test/reg','Api\TestController@reg');
 Route::post('/test/login','Api\TestController@login');
-Route::get('/test/list','Api\TestController@userlist');
+Route::get('/test/list','Api\TestController@userlist')->middleware('filtrate');

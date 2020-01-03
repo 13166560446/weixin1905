@@ -73,6 +73,8 @@ class TestController extends Controller
 
     //获取用户列表
     public function userlist(){
+        $data=ApiloginModel::all();
+        echo '<pre>';print_r($data);echo '</pre>';die;
 //        echo '<pre>';print_r($_SERVER);echo '</pre>';die;
 //        $user_token=$_SERVER['HTTP_TOKEN'];
 //        echo 'user_token: '.$user_token;echo '</br>';
