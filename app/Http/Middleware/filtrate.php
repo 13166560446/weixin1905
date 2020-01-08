@@ -15,8 +15,9 @@ class filtrate
      */
     public function handle($request, Closure $next)
     {
+//        echo '<pre>';print_r($_SERVER);echo '</pre>';die;
         if(isset($_SERVER['HTTP_TOKEN'])){
-            echo 1;die;
+
             $redis_key='str:count:u'.$_SERVER['HTTP_TOKEN'].':url:'.$_SERVER['REQUEST_URI'];
             $count=Redis::get($redis_key);
             if($count>=5){
@@ -25,14 +26,16 @@ class filtrate
                     'errno'=>40004,
                     'msg'=>'接口请求已达上限请稍后再试'
                 ];
-                die(json_encode($response,JSON_UNESCAPED_UNICODE));
+
+                json_encode($response,JSON_UNESCAPED_UNICODE);die;
+
             }
         }else{
             $response=[
                 'errno'=>40005,
                 'msg'=>'没有授权'
             ];
-            json_encode($response,JSON_UNESCAPED_UNICODE);
+            json_encode($response,JSON_UNESCAPED_UNICODE);die;
         }
         return $next($request);
     }

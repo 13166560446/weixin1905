@@ -21,6 +21,8 @@ Route::get('/', function () {
 
 Route::any('/test/hello','Test\TestController@hello');
 Route::any('/test/adduser','Test\TestController@adduser');
+Route::any('/test/ord','Test\TestController@ord');
+Route::any('/test/dec','Test\TestController@dec');
 
 Route::get('/weixin','Weixin\WeixinController@weixin');
 Route::post('/weixin','Weixin\WeixinController@receiv');
@@ -51,3 +53,9 @@ Route::get('/test/jiekou','Api\TestController@test');
 Route::post('/test/reg','Api\TestController@reg');
 Route::post('/test/login','Api\TestController@login');
 Route::get('/test/list','Api\TestController@userlist')->middleware('filtrate');
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
