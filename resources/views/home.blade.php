@@ -16,7 +16,7 @@
 
                     You are logged in!
                         <br>
-                        <a href="">添加公钥</a>
+                        <a href="user/add">添加公钥</a>
                         <a href="">解密数据</a>
                         <a href="">自动验签</a>
                 </div>

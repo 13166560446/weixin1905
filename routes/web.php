@@ -59,3 +59,9 @@ Route::get('/test/list','Api\TestController@userlist')->middleware('filtrate');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//加密
+Route::get('/user/add','User\IndexController@addSSHKey1');
+Route::post('/user/addkey','User\IndexController@addSSHKey2');
