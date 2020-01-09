@@ -65,7 +65,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 //加密
 Route::get('/user/add','User\IndexController@addSSHKey1');
 Route::post('/user/addkey','User\IndexController@addSSHKey2');
-
+//解密
+Route::get('/user/decrypt/data','User\IndexController@decrypt1');
+Route::post('/user/decrypt/data','User\IndexController@decrypt2');
 
 Route::get('/sign/online','Sign\IndexController@signOnline');
 Route::post('/sign/online','Sign\IndexController@signOnline1');

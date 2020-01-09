@@ -17,7 +17,7 @@
                     You are logged in!
                         <br>
                         <a href="user/add">添加公钥</a>
-                        <a href="">解密数据</a>
+                        <a href="user/decrypt/data">解密数据</a>
                         <a href="sign/online">自动验签</a>
                 </div>
             </div>
